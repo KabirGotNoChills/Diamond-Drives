@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Car Listings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(); 
+            background-size: auto;
+            background-position: center;
+            background-attachment: fixed; 
+            color: black; 
+            font-family: Arial, sans-serif;
+            margin: 0; 
+        }
+        header {
+            background: linear-gradient(45deg, #222, #444);
+            color: white;
+            padding: 0; 
+            margin: 0; 
+        }
+        
+        .container {
+            max-width: 1300px;
+            margin: 0 auto; 
+            padding: 0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .results-info {
+            text-align: left;
+            font-size: 24px;
+            font-weight: 525;
+            margin-top: 80px;
+            margin-left: 10%;
+            margin-right: 10%;
+            color: #000; 
+            font-family: 'Arial', sans-serif; 
+            letter-spacing: 1px; 
+            text-transform: uppercase; 
+        }
+        
+        .results-info::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #222;
+            margin: 25px auto 0 auto;
+            margin-right: 10%
+        }
+
+        .sort-dropdown {
+            float: right; 
+            margin-right: 10%;
+            font-size: 16px;
+            color: black; 
+            font-family: 'Arial', sans-serif; 
+        }
+
+        .sort-dropdown select {
+            padding: 5px; 
+            font-size: 16px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            background-color: #f4f4f4; 
+            color: black; 
+            cursor: pointer; 
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 5%; 
+            justify-items: center; 
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #F4F4F4;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%; 
+            max-width: 700px; 
+            padding: 15px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        .card .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            margin: 10px 0;
+        }
+        .card .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            margin: 5px 0;
+        }
+        .card .details {
+            display: flex;
+            justify-content: space-around;
+            font-size: 14px;
+            color: black;
+        }
+        .detail {
+            text-align: center;
+        }
+
+        .header {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 98%;
+            padding: 15px; 
+            margin: 0;
+        }
+
+        .logo img {
+            max-width: 80px;
+            height: auto;
+            margin-left: 44%;
+            padding-top: 5px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .page-name {
+            flex-grow: 0.1;
+            text-align: right;
+            font-size: 0.1; 
+            text-decoration-thickness: 1;
+            color: white; 
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 200;
+            letter-spacing: 1px; 
+             
+            margin: 0; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <a href="index.html" class="logo">
+                <img src="LOGOOOOoooo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="page-name">
+            <h2>Buy - 7383304864 || Sell - 4158956969</h2>
+        </div>
+    </div>
+
+    <div class="results-info">
+        TOTAL 9 RESULTS FOUND
+        <span class="sort-dropdown">
+            SORT BY:
+            <select>
+                <option value="price">Price</option>
+                <option value="l to h">Price - Low to High</option>
+                <option value="h to l">Price - High to Low </option>
+
+            </select>
+        </span>
+    </div>
+
+    <div class="container">
+        <h2></h2>
+        <div class="card-container">
+ 
+        </div>        
+    </div>
+    <div class="container">
+        <h2></h2>
+        <div class="card-container">
+            
+           
+            
+            
+                <div class="card">
+                    <img src="download (8).png" alt="McLaren Speedtail">
+                    <div class="price">₹1,69,00,000</div>
+                    <div class="title">2023 Porsche Taycan GTS</div>
+                    <div class="details">
+                        <div class="detail">
+                            <p>REG. YEAR</p>
+                            <p>2023</p>
+                        </div>
+                        <div class="detail">
+                            <p>KMS</p>
+                            <p>500</p>
+                        </div>
+                        <div class="detail">
+                            <p>FUEL TYPE</p>
+                            <p>PETROL</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="download (1).png" alt="buggati">
+                    <div class="price">₹1,51,00,000</div>
+                    <div class="title">2023 BMW 740i M Sport</div>
+                    <div class="details">
+                        <div class="detail">
+                            <p>REG. YEAR</p>
+                            <p>2023</p>
+                        </div>
+                        <div class="detail">
+                            <p>KMS</p>
+                            <p>1000</p>
+                        </div>
+                        <div class="detail">
+                            <p>FUEL TYPE</p>
+                            <p>PETROL</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="download (2).png" alt="">
+                    <div class="price">₹36,00,000</div>
+                    <div class="title">2019 AUDI Q5 40TDI Technology</div>
+                    <div class="details">
+                        <div class="detail">
+                            <p>REG. YEAR</p>
+                            <p>2019</p>
+                        </div>
+                        <div class="detail">
+                            <p>KMS</p>
+                            <p>2600</p>
+                        </div>
+                        <div class="detail">
+                            <p>FUEL TYPE</p>
+                            <p>PETROL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="download (4).png" alt="">
+                    <div class="price">₹4,70,00,000</div>
+                    <div class="title">2024 LAND ROVER RANGE ROVER P615 SV LWB</div>
+                    <div class="details">
+                        <div class="detail">
+                            <p>REG. YEAR</p>
+                            <p>UNREGISTERED</p>
+                        </div>
+                        <div class="detail">
+                            <p>KMS</p>
+                            <p>0</p>
+                        </div>
+                        <div class="detail">
+                            <p>FUEL TYPE</p>
+                            <p>PETROL</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="download (5).png" alt="2019 MERCEDES Benz SLC43 AMG">
+                    <div class="price">₹62,00,000</div>
+                    <div class="title">2019 MERCEDES Benz SLC43 AMG</div>
+                    <div class="details">
+                        <div class="detail">
+                            <p>REG. YEAR</p>
+                            <p>2017</p>
+                        </div>
+                        <div class="detail">
+                            <p>KMS</p>
+                            <p>47700</p>
+                        </div>
+                        <div class="detail">
+                            <p>FUEL TYPE</p>
+                            <p>PETROL</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="download (6).png" alt="">
+                    <div class="price">₹39,00,000</div>
+                    <div class="title">2018 Lexus NX 300H Luxury</div>
+                    <div class="details">
+                        <div class="detail">
+                            <p>REG. YEAR</p>
+                            <p>2024</p>
+                        </div>
+                        <div class="detail">
+                            <p>KMS</p>
+                            <p>2600</p>
+                        </div>
+                        <div class="detail">
+                            <p>FUEL TYPE</p>
+                            <p>PETROL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="download (7).png" alt="2018 Mercedes Maybach S650">
+                    <div class="price">₹1,39,00,000</div>
+                    <div class="title">2018 Mercedes Maybach S650</div>
+                    <div class="details">
+                        <div class="detail">
+                            <p>REG. YEAR</p>
+                            <p>2018</p>
+                        </div>
+                        <div class="detail">
+                            <p>KMS</p>
+                            <p>4000</p>
+                        </div>
+                        <div class="detail">
+                            <p>FUEL TYPE</p>
+                            <p>PETROL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="download (3).png" alt="2018 Mercedes Maybach S650">
+                    <div class="price">₹1,35,00,000</div>
+                    <div class="title">2021 BMW 740Li LCI M Sport</div>
+                    <div class="details">
+                        <div class="detail">
+                            <p>REG. YEAR</p>
+                            <p>2021</p>
+                        </div>
+                        <div class="detail">
+                            <p>KMS</p>
+                            <p>1500</p>
+                        </div>
+                        <div class="detail">
+                            <p>FUEL TYPE</p>
+                            <p>PETROL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="download (9).png" alt="2023 Mercedes AMG GLE 53 Coupe">
+                    <div class="price">₹1,39,00,000</div>
+                    <div class="title">2023 MERCEDES AMG GLE 53 COUPE 4MATIC PLUS</div>
+                    <div class="details">
+                        <div class="detail">
+                            <p>REG. YEAR</p>
+                            <p>2023</p>
+                        </div>
+                        <div class="detail">
+                            <p>KMS</p>
+                            <p>1500</p>
+                        </div>
+                        <div class="detail">
+                            <p>FUEL TYPE</p>
+                            <p>PETROL</p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        
+        </div>
+        
+    </div>
+    
+</body>
+</html>
